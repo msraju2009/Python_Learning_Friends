@@ -49,6 +49,7 @@ name = "Hello"
 
 print(name)
 print(type(name))
+
 # mutable -- its value can change
 list_of_numbers = [1, 2, 3, 4, 5, "hello"]
 print(list_of_numbers)
@@ -60,20 +61,21 @@ tuple_of_numbers = (1, 2, 3, 4, 5)
 print(tuple_of_numbers)
 print(type(tuple_of_numbers))
 
+# sets are used to remove duplicate data in a sequence
 set_of_numbers = {4, 5, 2, 5, 6, 2, 12, 4, 5}
-
 print(set_of_numbers)
 
+# dictionaries are key-value pair items.
 phone_book_names = {'name': 'madhu',
                     'number': 98563030
                     }
 print(phone_book_names['number'])
 
 
+# User defined data types can be created using class in python
+
 class Employee:
     pass
 
-
 d = Employee()
-print(type(d))
-# class.__main__.Employee
+print(type(d))  # <type 'instance'>
