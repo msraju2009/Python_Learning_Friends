@@ -187,14 +187,29 @@ Liverpool = {
 # for k,v in Liverpool.items():
 #     print(v.keys())
 
-with open('employees.json') as ip:
+# with open('employees.json') as ip:
+#     op = json.load(ip)
+#
+# for ele in op:
+#     data = op['data']
+#     for k in data:
+#         employee_name = k['employee_name']
+#         employee_age = k['employee_age']
+#         profile_image = k['profile_image']
+#         if profile_image is not None:  # get employees who doesnt not have profile image
+#             print("Employee {} doesnt have image ".format(employee_name))
+
+# iterate through list of dictionaries
+with open('mockaroo-user-data.json') as ip:
     op = json.load(ip)
 
 for ele in op:
-    data = op['data']
-    for k in data:
-        employee_name = k['employee_name']
-        employee_age = k['employee_age']
-        profile_image = k['profile_image']
-        if profile_image is not None:  # get employees who doesnt not have profile image
-            print("Employee {} doesnt have image ".format(employee_name))
+    # store each key details in a variable
+    first_name = ele['first_name']
+    gender = ele['gender']
+    last_name = ele['last_name']
+    ip_address = ele['ip_address']
+    print("Name is {} and IP address is {} ".format(first_name + last_name, ip_address))
+# import os
+# dir_path = os.path.dirname(os.path.abspath(__file__))
+# print(dir_path)
