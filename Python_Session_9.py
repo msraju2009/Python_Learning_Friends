@@ -35,7 +35,6 @@ D = {k: D[k] for k in selected_keys}
 # get remaining keys after removing removed_keys
 D = {k: D[k] for k in D.keys() - removed_key}
 print(D)
-#
 
 colors = {0: 'red', 1: 'blue', 2: 'green'}
 # output should be like this {red:0, blue:1, green:2}
