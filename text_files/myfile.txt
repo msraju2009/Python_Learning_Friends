@@ -1,0 +1,4 @@
+Hello Madhu
+Welcome to Python session
+In this session, we will talk about file handling
+Thanks for attending the session
